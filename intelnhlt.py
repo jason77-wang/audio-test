@@ -119,7 +119,7 @@ class NhltTable:
                         print ("Undefined DMIC array_type", hex(array_type[0]))
                 else:
                     """ Jump to next endpoint """
-                    f.seek(ep_lent - 5, 1)
+                    f.seek(ep_lent[0] - 5, 1)
                     continue
         except PermissionError:
             print ('permission error, Please run it with sudo')
